@@ -1,0 +1,49 @@
+.section-card {
+  /* padding: 50px 150px; */
+}
+.product {
+  display: flex;
+}
+.cantidad {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.product-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+.product-info-detalles-de-envio {
+  display: flex;
+}
+.product-info-detalles-de-envio-verde {
+  color: green;
+}
+.product-info-detalles-de-envio-carro {
+  width: 40px;
+  margin-right: 20px;
+}
+.product-info-detalles-de-envio-condicion {
+  border-right: solid 0.5px;
+  border-color: rgba(109, 107, 107, 0.55);
+  padding-right: 10px;
+}
+.product-info-detalles-de-envio-soldQuantity {
+  padding-left: 20px;
+}
+.product-condicion-y-cantidad {
+  display: flex;
+  align-items: center;
+}
+#cant-prod {
+  padding: 5px;
+}
+.button-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

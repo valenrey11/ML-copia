@@ -1,0 +1,38 @@
+/* .sub-cat-name > ul {
+  position: relative;
+  display: none; */
+.category-name {
+  margin: 10px 0px;
+}
+.cambiante {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sub-category {
+  color: #666;
+  padding: 2px;
+}
+.cambiante :hover {
+  cursor: context-menu;
+}
+.sub-cat-container :hover {
+  text-decoration: underline;
+}
+.disable {
+  display: none;
+}
+.enable {
+  display: block;
+}
+.arrow {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  align-self: center;
+}
+.sub-cat-container {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
