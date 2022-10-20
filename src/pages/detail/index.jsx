@@ -5,7 +5,6 @@ import { Product } from "../../components/Product";
 import { Spinner } from "../../components/Spinner";
 import { GetItemInfo } from "../../services/GetItemInfo";
 import { ButtonEl } from '../../components/Button/index.jsx'
-import { Slider } from "../../components/Slider";
 import envios from '../../assets/envios.png'
 import './index.css'
 
@@ -74,9 +73,9 @@ export function Detail(props) {
                     </section>
                 </div>
 
-                <div >
+                {/* <div >
                     <Slider product={product} />
-                </div>
+                </div> */}
             </section>
     }
     </>

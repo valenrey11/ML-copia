@@ -24,7 +24,7 @@ export function Header() {
         setLocation(`/carrito`)
     }
     return <header className="header">
-        <Link href={'/'} onClick={deleteInput}>
+        <Link href={'/ML-copia/'} onClick={deleteInput}>
             <img className="logo" src={logo} alt="logo" />
         </Link>
         <form onSubmit={handleSearch} className="form">

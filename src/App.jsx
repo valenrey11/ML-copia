@@ -14,7 +14,7 @@ function App() {
       <ProductsContext>
         <ProducstIdFromCarrito>
           <Header />
-          <Route path='/' component={Home} />
+          <Route path='/ML-copia' component={Home} />
           <Route path='/search/:keyword' component={SearchResults} />
           <Route path='/category/:subCatId' component={PageCategories} />
           <Route path='/detail/:itemId' component={Detail} />
