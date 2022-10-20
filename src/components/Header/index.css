@@ -6,6 +6,12 @@
   padding: 10px;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .header {
+    height: 70px;
+    padding: 0px 20px;
+  }
+}
 .inp {
   height: 40px;
   width: 40%;
@@ -20,11 +26,21 @@
 *:focus {
   outline: none;
 }
+@media (max-width: 500px) {
+  .inp {
+    flex-grow: 0.7;
+  }
+}
 .btn-container {
   height: 40px;
   width: 5%;
   display: flex;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .btn-container {
+    display: none;
+  }
 }
 .btn {
   width: 100%;
@@ -39,13 +55,25 @@
   flex-grow: 1;
   justify-content: center;
 }
+
 .logo {
   height: 100%;
 }
+@media (max-width: 500px) {
+  .logo {
+    width: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .ofertas {
+    display: none;
+  }
+}
+
 .img-lupa {
   width: 25px;
 }
 .carrito {
-  width: 25px;
+  width: 27px;
   margin-left: 10px;
 }
