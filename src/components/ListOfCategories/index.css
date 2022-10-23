@@ -1,13 +1,21 @@
-.listOfCat {
+.list-of-cat {
   text-align: start;
 }
 
 @media (max-width: 500px) {
-  .listOfCat {
-    display: none;
-    border: solid red;
+  .list-of-cat {
     position: fixed;
-    left: 100px;
+    left: 11%;
+    padding: 30px;
     overflow: auto;
+    background-color: rgb(189, 216, 216);
+    border-radius: 8px;
+    height: calc(100vh - 200px);
+  }
+  .show-of {
+    display: none;
+  }
+  .show-on {
+    display: block;
   }
 }

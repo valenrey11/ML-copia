@@ -13,5 +13,5 @@ export function ListOfCategories() {
                 nombre={cat.name}
                 key={cat.id} />
         })
-    return <div className="listOfCat">{respuesta}</div>
+    return <div className="list-of-cat show-of">{respuesta}</div>
 }

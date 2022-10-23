@@ -31,6 +31,9 @@ product-item-id,
 product-item-price {
   width: 100%;
 }
+.product-item-title {
+  margin: 0;
+}
 
 .product-item-img-container {
   padding: 5px;

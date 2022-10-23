@@ -26,10 +26,25 @@ export function Header() {
     const directCarrito = () => {
         setLocation(`/carrito`)
     }
+    const showCategories = () => {
+        const categorias = document.querySelector('.list-of-cat')
+        console.log(categorias);
+        if (window.screen.width < 500) {
+            if (categorias.classList.contains('show-of')) {
+                categorias.classList.remove('show-of')
+                categorias.classList.add('show-on')
+            } else
+                if (categorias.classList.contains('show-on')) {
+                    categorias.classList.remove('show-on')
+                    categorias.classList.add('show-of')
+                }
+
+        }
+
+    }
     return <>
         <header className="header">
             <Link href={'/ML-copia/'} onClick={deleteInput}>
-                {/* {console.log(window.innerWidth)} */}
                 <img className="logo" src={logoFinal} alt="logo" />
             </Link>
             <form onSubmit={handleSearch} className="form">
@@ -43,8 +58,8 @@ export function Header() {
             <p className="ofertas">Ofertas por tiempo limitado</p>
             <img src={carrito} alt="carro" className="carrito" onClick={directCarrito} />
         </header>
-        <div className="cat-wrapper">
-            <p className="category-list">Categorias</p>
+        <div className="cat-wrapper" onClick={showCategories}>
+            <p className="category-list" >Categorias</p>
             <img className="flecha" src={flecha} alt="flecha" />
         </div>
     </>
