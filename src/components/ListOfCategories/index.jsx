@@ -7,7 +7,6 @@ export function ListOfCategories() {
     const { categories, loading } = useCategories()
     if (categories === undefined) return <Spinner />
     const respuesta = loading === true ? <Spinner /> :
-
         categories.map(cat => {
             return <Category
                 id={cat.id}

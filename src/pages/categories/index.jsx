@@ -4,11 +4,10 @@ import { ListOfProducts } from "../../components/ListOfProduct";
 import { GetSubCatResults } from "../../services/GetSubCatResults";
 import { useContext } from "react";
 import ProductsContext from "../../context/keywordContext";
+import './index.css'
 export function PageCategories(props) {
     let { products, setProducts } = useContext(ProductsContext)
-    console.log(products);
     products = undefined
-    console.log(products);
     // const [products, setProducts] = useState([])
     const subCatId = props.params.subCatId
     useEffect(() => {
@@ -18,13 +17,10 @@ export function PageCategories(props) {
     }, [subCatId])
     return <>
         <section className="products-section">
-            <div>
-                <ListOfCategories />
-            </div>
+            <ListOfCategories />
             <div className="products-list">
                 <ListOfProducts />
             </div>
         </section>
-        {/* {console.log(products)} */}
     </>
 }

@@ -12,15 +12,15 @@ export function Slider({ pictures }) {
         </ >
     }
     return <>
-        < div className="slide-container"  >
-            <Slide>
+        < div className="slide-container" style={{ width: '100%', height: '100%', border: 'solid blue' }} >
+            <Slide style={{ height: '100px' }}>
                 {pictures.map((pic, index) => {
-                    return <div className="each-slide-effect" key={index} style={{ width: '400px', height: '250px' }} >
+                    return <div className="each-slide-effect" key={index} style={{ width: '100%', height: '11rem', border: 'solid red' }} >
                         <div
                             style={{
                                 backgroundImage: `url(${(pic)})`,
                                 width: '100%',
-                                height: '250px',
+                                height: '100%',
                                 backgroundSize: 'contain'
                             }}>
                         </div>

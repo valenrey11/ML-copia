@@ -4,3 +4,9 @@
   width: 100%;
   gap: 20px;
 }
+@media (max-width: 500px) {
+  .products-list {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}

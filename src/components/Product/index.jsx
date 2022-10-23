@@ -13,7 +13,7 @@ export function Product({ title, id, thumbnail, price, pictures }) {
                 {pictures === undefined ?
                     <img className='product-item-img' alt="thumbnail" src={thumbnail} />
                     :
-                    <div style={{ width: '100%', height: '250px' }}>
+                    <div style={{ width: '100%', height: '100%' }}>
                         <Slider pictures={pictures} />
                     </div>
                 }

@@ -11,7 +11,7 @@ export function Carrito() {
     const [products, setProducts] = useState([])
     useEffect(() => {
         productId.map(obj => {
-            GetItemInfo(obj.id).then(res => {
+            return GetItemInfo(obj.id).then(res => {
                 res.cantidad = obj.cantidad
                 setProducts(prev => ([...prev, res]))
             })
