@@ -47,9 +47,9 @@ export function Detail(props) {
                             <img className="product-info-detalles-de-envio-carro" src={envios} alt="carrito" />
                             <p className="product-info-detalles-de-envio-verde">Llega gratis el miercoles</p>
                         </div>
-                        <p>Enviar a tu direccion</p>
+                        <p style={{ margin: "5px 0px" }}>Enviar a tu direccion</p>
                         <div className="cantidad">
-                            <p>Cantidad</p>
+                            <p >Cantidad</p>
                             <div className="select">
                                 <select name="cant-prod" id="cant-prod">
                                     <option value="1">1</option>
@@ -72,10 +72,6 @@ export function Detail(props) {
                         </div>
                     </section>
                 </div>
-
-                {/* <div >
-                    <Slider product={product} />
-                </div> */}
             </section>
     }
     </>

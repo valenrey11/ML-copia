@@ -19,7 +19,7 @@ export function Product({ title, id, thumbnail, price, pictures }) {
                 }
             </div>
             <div className="product-item-info">
-                <h4 className='product-item-price'>${price} </h4>
+                <h4 style={{ margin: "5px 0px" }} className='product-item-price'>${price} </h4>
                 <h4 className='product-item-title'>{title}</h4>
             </div>
         </div>

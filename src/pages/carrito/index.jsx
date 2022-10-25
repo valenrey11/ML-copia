@@ -4,6 +4,7 @@ import { ButtonEl } from "../../components/Button";
 import { Spinner } from "../../components/Spinner";
 import ProducstIdFromCarrito from '../../context/carritoContext'
 import { GetItemInfo } from "../../services/GetItemInfo";
+import trash from '../../assets/trash.png'
 import './index.css'
 
 export function Carrito() {
@@ -13,19 +14,41 @@ export function Carrito() {
         productId.map(obj => {
             return GetItemInfo(obj.id).then(res => {
                 res.cantidad = obj.cantidad
-                setProducts(prev => ([...prev, res]))
+                setProducts(prev => ([...prev, res])
+                )
             })
         })
     }, [])
+
+    const deleteFromCarrito = (params) => {
+        const idASacar = params.target.id
+        const productsIdFiltrado = productId.filter(obj => {
+            return obj.id !== idASacar
+        })
+        const productsFiltrado = products.filter(obj => {
+            return obj.id !== idASacar
+        })
+        setProducts(productsFiltrado)
+        setProductId(productsIdFiltrado)
+    }
+
+
 
     const finalProducts = products.map(pro => {
         return <div className="wrapper" key={pro.title}>
             <img className="img" src={pro.thumbnail} alt="kcyo" />
             <div className="info-cont">
                 <p className="title">{pro.title}</p>
-                <div style={{ display: "flex", alignItems: 'center', gap: '30px' }}>
+                <div style={{ display: "flex", alignItems: 'center', gap: '30px', width: '100%' }}>
                     <p className="price">${pro.price}</p>
                     <p className="cant">cantidad: {pro.cantidad}</p>
+                    <img
+                        className="trash-bin"
+                        src={trash}
+                        alt="trash bin"
+                        onClick={deleteFromCarrito}
+                        id={pro.id}
+                    />
                 </div>
             </div>
         </div >
@@ -58,8 +81,9 @@ export function Carrito() {
     }
 
 
+
     return <>{products === undefined ? <Spinner /> : <div>
-        <h2>Este es el carrito</h2>
+        <h3>Este es el carrito</h3>
         <p>Y estos son tus productos:</p>
         <div className="products-container">
             {finalProducts}
@@ -74,3 +98,22 @@ export function Carrito() {
     </>
 
 }
+
+
+
+
+
+// / const productoASacar = products.map(p => {
+    //     if (p.id === idASacar) {
+    //         products.remove(p)
+    //     }
+    //     return p.id === idASacar
+    // })
+    // console.log(productoASacar);
+
+     // console.log('array recien filtrado', arrayFiltrado);
+        // setProducts(prev => {
+        //     prev.filter(obj => {
+        //         return obj.id !== idASacar
+        //     })
+        // })
