@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/ML-copia/static/css/main.f0920a5f.css",
-    "main.js": "/ML-copia/static/js/main.ae7668ac.js",
+    "main.css": "/ML-copia/static/css/main.fa7cbfc5.css",
+    "main.js": "/ML-copia/static/js/main.c45747aa.js",
     "static/media/logo-mercadolibre.png": "/ML-copia/static/media/logo-mercadolibre.e164b3e47324c49673b4.png",
     "static/media/lupa.png": "/ML-copia/static/media/lupa.1e71f44675201005904e.png",
     "static/media/envios.png": "/ML-copia/static/media/envios.d6f764205b7c156a7490.png",
+    "static/media/trash.png": "/ML-copia/static/media/trash.c4e35861d2606e76ed78.png",
     "index.html": "/ML-copia/index.html",
-    "main.f0920a5f.css.map": "/ML-copia/static/css/main.f0920a5f.css.map",
-    "main.ae7668ac.js.map": "/ML-copia/static/js/main.ae7668ac.js.map"
+    "main.fa7cbfc5.css.map": "/ML-copia/static/css/main.fa7cbfc5.css.map",
+    "main.c45747aa.js.map": "/ML-copia/static/js/main.c45747aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0920a5f.css",
-    "static/js/main.ae7668ac.js"
+    "static/css/main.fa7cbfc5.css",
+    "static/js/main.c45747aa.js"
   ]
 }
