@@ -11,10 +11,11 @@ export function GetItemInfo(id) {
             const price = results.price
             const condition = results.condition
             const soldQuantity = results.sold_quantity
+            const permalink = results.permalink
             const pictures = results.pictures.map(pic => {
                 return pic.url
             })
-            return { title, id, thumbnail, price, condition, soldQuantity, pictures }
+            return { title, id, thumbnail, price, condition, soldQuantity, permalink, pictures }
         })
 
 }

@@ -61,10 +61,13 @@ export function Detail(props) {
                         <div className="button-section">
                             <ButtonEl
                                 text='Comprar ahora'
-                                className='btn-detail-comprar'
-                                title={product.title}>
+                                permalink={product.permalink}
+                                className='btn-detail-comprar link'
+                                title={product.title}
+                                id={product.id}>
                             </ButtonEl>
                             <ButtonEl
+                                title={product.title}
                                 text='Agregar al Carro'
                                 className='btn-detail-carro'
                                 id={product.id}>

@@ -91,29 +91,10 @@ export function Carrito() {
 
         <div className="compra">
             <h4 className="total">El total de tu compra es: ${suma}</h4>
-            <ButtonEl text='Finalizar compra' className='btn-detail-comprar' />
+            <ButtonEl text='Finalizar compra' className='btn-detail-comprar finalizar-compra' />
         </div>
     </div>
     }
     </>
 
 }
-
-
-
-
-
-// / const productoASacar = products.map(p => {
-    //     if (p.id === idASacar) {
-    //         products.remove(p)
-    //     }
-    //     return p.id === idASacar
-    // })
-    // console.log(productoASacar);
-
-     // console.log('array recien filtrado', arrayFiltrado);
-        // setProducts(prev => {
-        //     prev.filter(obj => {
-        //         return obj.id !== idASacar
-        //     })
-        // })

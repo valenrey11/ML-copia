@@ -66,6 +66,9 @@
     height: auto;
   }
 }
+.ofertas {
+  margin-right: 20px;
+}
 @media (max-width: 500px) {
   .ofertas {
     display: none;
@@ -77,7 +80,6 @@
 }
 .carrito {
   width: 30px;
-  margin-left: 10px;
 }
 .category-list {
   font-size: 22px;
@@ -92,4 +94,21 @@
   align-items: baseline;
   justify-content: center;
   gap: 10px;
+}
+
+.number-carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.span {
+  font-size: 14px;
+  padding: 0px 3.5px;
+  border-radius: 40%;
+  text-align: center;
+  background-color: rgb(214, 94, 194);
+  position: relative;
+  top: 12px;
+  left: 12px;
 }

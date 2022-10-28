@@ -1,16 +1,31 @@
 import { useState } from "react";
 import { useLocation, Link } from "wouter";
+import ProducstIdFromCarrito from "../../context/carritoContext";
 import logo from '../../assets/logo-mercadolibre.png'
 import homeLogo from '../../assets/home.png'
 import flecha from '../../assets/arrow-down.png'
 import lupa from '../../assets/lupa.png'
 import carrito from '../../assets/carrito.png'
 import './index.css'
+import { useContext } from "react";
 
 
 export function Header() {
     const [keyword, setKeyword] = useState()
     const [location, setLocation] = useLocation();
+    const { productId, setProductId } = useContext(ProducstIdFromCarrito)
+    console.log(productId);
+
+    let cantProducts = 0
+    for (let i = 0; i < productId.length; i++) {
+        const element = productId[i];
+        console.log(element.cantidad);
+        cantProducts = cantProducts += element.cantidad
+        console.log(cantProducts);
+
+    }
+
+
     const logoFinal = window.screen.width < 500 ? homeLogo : logo
     const handleSearch = (event) => {
         event.preventDefault()
@@ -56,7 +71,11 @@ export function Header() {
                 </div>
             </form>
             <p className="ofertas">Ofertas por tiempo limitado</p>
-            <img src={carrito} alt="carro" className="carrito" onClick={directCarrito} />
+            <div className="number-carrito">
+                <span className="span">{cantProducts === 0 ? '' : cantProducts}</span>
+                <img src={carrito} alt="carro" className="carrito" onClick={directCarrito} />
+            </div>
+
         </header>
         <div className="cat-wrapper" onClick={showCategories}>
             <p className="category-list" >Categorias</p>
