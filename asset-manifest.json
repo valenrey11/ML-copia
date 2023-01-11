@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ML-copia/static/css/main.804b883c.css",
+    "main.css": "/ML-copia/static/css/main.5880ebfc.css",
     "main.js": "/ML-copia/static/js/main.b4ae5674.js",
     "static/media/logo-mercadolibre.png": "/ML-copia/static/media/logo-mercadolibre.e164b3e47324c49673b4.png",
     "static/media/lupa.png": "/ML-copia/static/media/lupa.1e71f44675201005904e.png",
     "static/media/envios.png": "/ML-copia/static/media/envios.d6f764205b7c156a7490.png",
     "static/media/trash.png": "/ML-copia/static/media/trash.c4e35861d2606e76ed78.png",
     "index.html": "/ML-copia/index.html",
-    "main.804b883c.css.map": "/ML-copia/static/css/main.804b883c.css.map",
+    "main.5880ebfc.css.map": "/ML-copia/static/css/main.5880ebfc.css.map",
     "main.b4ae5674.js.map": "/ML-copia/static/js/main.b4ae5674.js.map"
   },
   "entrypoints": [
-    "static/css/main.804b883c.css",
+    "static/css/main.5880ebfc.css",
     "static/js/main.b4ae5674.js"
   ]
 }
