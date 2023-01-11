@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Slide } from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css'
 import { Spinner } from "../Spinner";
@@ -19,9 +18,10 @@ export function Slider({ pictures }) {
                         <div
                             style={{
                                 backgroundImage: `url(${(pic)})`,
-                                width: '100%',
+                                // width: '100%',
                                 height: '100%',
-                                backgroundSize: 'contain'
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat'
                             }}>
                         </div>
                     </div>

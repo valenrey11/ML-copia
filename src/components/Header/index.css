@@ -95,6 +95,11 @@
   justify-content: center;
   gap: 10px;
 }
+@media (min-width: 500px) {
+  .cat-wrapper {
+    display: none;
+  }
+}
 
 .number-carrito {
   display: flex;

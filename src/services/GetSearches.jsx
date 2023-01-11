@@ -7,7 +7,8 @@ export function GetSearches(word) {
             const InfoProductosAMostrar = results.map(prod => {
                 const title = prod.title
                 const id = prod.id
-                const thumbnail = prod.thumbnail
+                let thumbnail = prod.thumbnail
+                thumbnail = thumbnail.replace('-I.', '-O.');
                 const price = prod.prices.prices[0].amount
                 return { title, id, thumbnail, price }
             })
