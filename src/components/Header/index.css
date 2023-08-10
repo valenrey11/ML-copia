@@ -1,9 +1,11 @@
+header {
+  padding: 0px 20px;
+  background-color: #fff159;
+}
 .header {
   display: flex;
   justify-content: space-between;
-  height: 100px;
-  background-color: #fff159;
-  padding: 10px;
+  padding: 5px 0px;
   align-items: center;
 }
 @media (max-width: 500px) {
@@ -14,7 +16,7 @@
 }
 .inp {
   height: 40px;
-  width: 40%;
+  width: 100%;
   border: none;
   padding: 0 15px;
   font-size: 18px;
@@ -49,16 +51,21 @@
   border: none;
   border-left: 1px solid #e6e6e6;
 }
+.form-container {
+  width: 100%;
+  margin: 0 60px;
+}
 .form {
   display: flex;
   align-items: center;
   flex-grow: 1;
   justify-content: center;
+  width: 100%;
 }
 
 .logo {
-  height: 100%;
-  width: auto;
+  height: auto;
+  max-width: 140px;
 }
 @media (max-width: 500px) {
   .logo {
@@ -79,7 +86,7 @@
   width: 25px;
 }
 .carrito {
-  width: 30px;
+  width: 20px;
 }
 .category-list {
   font-size: 22px;
@@ -89,7 +96,7 @@
   width: 15px;
   height: 15px;
 }
-.cat-wrapper {
+/* .cat-wrapper {
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -99,7 +106,7 @@
   .cat-wrapper {
     display: none;
   }
-}
+} */
 
 .number-carrito {
   display: flex;
@@ -116,4 +123,64 @@
   position: relative;
   top: 12px;
   left: 12px;
+}
+
+.banner {
+  max-width: 340px;
+}
+
+.second-layer-header {
+  height: 20px;
+  display: flex;
+  background-color: #fff159;
+  height: 50px;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 10px;
+}
+.second-layer-header p {
+  margin: 0;
+}
+.ubicacion {
+  display: flex;
+  max-width: 120px;
+  text-align: left;
+}
+.ubicacion p {
+  margin: 0;
+  font-size: 14px;
+}
+.ubicacion span {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ubi-img {
+  width: 25px;
+  height: fit-content;
+}
+
+.nav-derecha,
+.nav-derecha-user,
+.nav-derecha-favoritos {
+  display: flex;
+  font-size: 14px;
+  /* align-items: end; */
+  align-items: baseline;
+}
+
+.nav-derecha {
+  gap: 20px;
+}
+.arrow {
+  margin-left: 5px;
+  align-self: auto;
+}
+.user-img {
+  width: 20px;
+  margin-right: 3px;
+}
+
+.campana {
+  width: 20px;
 }

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { GetItemInfo } from "../services/GetItemInfo";
+import { useEffect, useState } from 'react'
+import { GetItemInfo } from '../services/GetItemInfo'
 
-export function useDetail(props) {
+export function useDetail (props) {
 
 }
