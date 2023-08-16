@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ML-copia/static/css/main.dd81d58d.css",
-    "main.js": "/ML-copia/static/js/main.d89a5364.js",
+    "main.css": "/ML-copia/static/css/main.f977fcc8.css",
+    "main.js": "/ML-copia/static/js/main.29c9b843.js",
     "static/media/user.png": "/ML-copia/static/media/user.94c69d56f7b5c99e5280.png",
     "static/media/logo-mercadolibre.png": "/ML-copia/static/media/logo-mercadolibre.e164b3e47324c49673b4.png",
     "static/media/lupa.png": "/ML-copia/static/media/lupa.1e71f44675201005904e.png",
@@ -9,11 +9,11 @@
     "static/media/bell.png": "/ML-copia/static/media/bell.5846d4b1994ad4088108.png",
     "static/media/trash.png": "/ML-copia/static/media/trash.c4e35861d2606e76ed78.png",
     "index.html": "/ML-copia/index.html",
-    "main.dd81d58d.css.map": "/ML-copia/static/css/main.dd81d58d.css.map",
-    "main.d89a5364.js.map": "/ML-copia/static/js/main.d89a5364.js.map"
+    "main.f977fcc8.css.map": "/ML-copia/static/css/main.f977fcc8.css.map",
+    "main.29c9b843.js.map": "/ML-copia/static/js/main.29c9b843.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd81d58d.css",
-    "static/js/main.d89a5364.js"
+    "static/css/main.f977fcc8.css",
+    "static/js/main.29c9b843.js"
   ]
 }
