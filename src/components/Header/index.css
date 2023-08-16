@@ -96,34 +96,36 @@ header {
   width: 15px;
   height: 15px;
 }
-/* .cat-wrapper {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 10px;
-}
-@media (min-width: 500px) {
-  .cat-wrapper {
-    display: none;
-  }
-} */
 
-.number-carrito {
+.carrito-img-btn {
+  display: flex;
+}
+.bubble_count {
+  position: relative;
+  top: -10px;
+  right: -5px;
+  color: #fff;
+  font-size: 12px;
+  background: rgba(198, 28, 32, 0.7);
+  padding: 1px 5px 0px 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+/* .number-carrito {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
-.span {
+/* .span {
   font-size: 14px;
   padding: 0px 3.5px;
   border-radius: 40%;
   text-align: center;
   background-color: rgb(214, 94, 194);
   position: relative;
-  top: 12px;
-  left: 12px;
-}
+} */
 
 .banner {
   max-width: 340px;

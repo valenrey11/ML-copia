@@ -5,20 +5,22 @@ import { useEffect, useRef } from 'react'
 export function Product({ title, id, thumbnail, price, pictures }) {
   const [location, setLocation] = useLocation()
   const productCardRef = useRef(null)
-  useEffect(() => {
-    if (location !== '/ML-copia/') {
-      productCardRef.current.classList.remove('product-card')
+  const updateProductCardClass = (location) => {
+    if (location === '/ML-copia' || location === '/ML-copia/') {
+      productCardRef.current.classList.add('product-card')
     }
+  }
+
+  useEffect(() => {
+    updateProductCardClass(location)
   }, [])
+
   const handleDetail = () => {
     const route = `/detail/${id}`
     setLocation(route)
   }
   return (
-    <div
-      className='prod product-card product-card-banner'
-      ref={productCardRef}
-      onClick={handleDetail}>
+    <div className='prod product-card-banner' ref={productCardRef} onClick={handleDetail}>
       <div className='product-item'>
         <div className='product-item-img-container' style={{ margin: '0 auto' }}>
           {pictures === undefined ? (

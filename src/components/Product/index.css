@@ -3,7 +3,6 @@
   flex-shrink: 0;
   max-height: 300px;
   margin: 0 auto;
-  /* border: solid green 0.1px; */
   height: 100%;
 }
 .product-card {

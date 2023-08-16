@@ -39,18 +39,6 @@ export function Header() {
   const directCarrito = () => {
     setLocation('/carrito')
   }
-  const showCategories = () => {
-    const categorias = document.querySelector('.list-of-cat')
-    if (window.screen.width < 500) {
-      if (categorias.classList.contains('show-of')) {
-        categorias.classList.remove('show-of')
-        categorias.classList.add('show-on')
-      } else if (categorias.classList.contains('show-on')) {
-        categorias.classList.remove('show-on')
-        categorias.classList.add('show-of')
-      }
-    }
-  }
 
   const { categories, loading } = useCategories()
   return (
@@ -77,10 +65,8 @@ export function Header() {
               className='banner'
             />
           </a>
-          <div className='number-carrito'>
-            <span className='span'>{cantProducts === 0 ? '' : cantProducts}</span>
-          </div>
         </div>
+
         <section className='second-layer-header'>
           <div className='ubicacion'>
             <img src={ubicacion} alt='ubicacion' className='ubi-img' />
@@ -89,7 +75,9 @@ export function Header() {
               <span>Tu direccion</span>
             </div>
           </div>
+
           <NavCenter catDepartment={categories} />
+
           <nav className='nav-derecha'>
             <div className='nav-derecha-user'>
               <img src={user} alt='profile' className='user-img' />
@@ -102,14 +90,13 @@ export function Header() {
               <img src={arrowDown} alt='flecha' className='arrow' />
             </div>
             <img src={campana} alt='campana' className='campana' />
-            <img src={carrito} alt='carrito' className='carrito' onClick={directCarrito} />
+            <div className='carrito-img-btn'>
+              <img src={carrito} alt='carrito' className='carrito' onClick={directCarrito} />
+              <span className='bubble_count'>{cantProducts === 0 ? '' : cantProducts}</span>
+            </div>
           </nav>
         </section>
       </header>
-      {/* <div className='cat-wrapper' onClick={showCategories}>
-        <p className='category-list'>Categorias</p>
-        <img className='flecha' src={flecha} alt='flecha' />
-      </div> */}
     </>
   )
 }

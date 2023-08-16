@@ -6,7 +6,6 @@ import { ListOfProducts } from '../../components/ListOfProduct'
 import { ProductSlider } from '../../components/ProductSlider'
 import { Suscribete } from '../../components/Suscribete'
 import { BeneficiosMercadoPuntos } from '../../components/BeneficiosMercadoPuntos'
-import { useEffect, useRef } from 'react'
 const PICTURES = [
   'https://http2.mlstatic.com/D_NQ_882988-MLA70390413574_072023-OO.webp',
   'https://http2.mlstatic.com/D_NQ_702182-MLA70435050360_072023-OO.webp',
